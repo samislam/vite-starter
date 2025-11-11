@@ -1,3 +1,4 @@
+import './globals.css'
 import App from './App.tsx'
 import { StrictMode } from 'react'
 import '@fontsource/roboto/300.css'
