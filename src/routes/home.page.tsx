@@ -5,7 +5,7 @@ import { ShieldCheck, Sparkles, type LucideIcon } from 'lucide-react'
 const Page = () => {
   return (
     <div className="relative isolate overflow-hidden bg-slate-950 text-slate-100">
-      <div className="pointer-events-none absolute inset-x-0 top-[-10rem] -z-10 mx-auto h-[24rem] max-w-4xl rounded-full bg-gradient-to-b from-cyan-500/40 via-blue-500/25 to-transparent blur-[130px]" />
+      <div className="pointer-events-none absolute inset-x-0 -top-40 -z-10 mx-auto h-96 max-w-4xl rounded-full bg-linear-to-b from-cyan-500/40 via-blue-500/25 to-transparent blur-[130px]" />
 
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-16 lg:px-10 lg:py-20">
         <header className="flex flex-col items-center gap-6 text-center">
@@ -15,7 +15,7 @@ const Page = () => {
 
           <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
             Hello from the{' '}
-            <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
               React Vite Starter
             </span>
           </h1>
