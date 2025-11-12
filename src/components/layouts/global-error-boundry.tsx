@@ -1,5 +1,5 @@
+import type { Route } from '#/+types/root'
 import { isRouteErrorResponse } from 'react-router'
-import type { Route } from '#/routes/+types/home.page'
 
 export const ErrorBoundary = (props: Route.ErrorBoundaryProps) => {
   const { error } = props
