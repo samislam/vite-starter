@@ -1,4 +1,4 @@
-import { LibraryIcon } from '@/components/composables/lib-icon'
+import { LibraryIcon } from '@/components/common/lib-icon'
 
 export interface PageDef {
   href: string
