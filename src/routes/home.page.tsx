@@ -2,107 +2,6 @@ import reactLogo from '@/assets/react.svg'
 import { Code2, Layers3, Palette, PlugZap } from 'lucide-react'
 import { ShieldCheck, Sparkles, type LucideIcon } from 'lucide-react'
 
-const features: Array<{
-  icon: LucideIcon
-  title: string
-  description: string
-}> = [
-  {
-    icon: Sparkles,
-    title: 'Opinionated defaults',
-    description:
-      'React 19, TypeScript, Vite 7, and Tailwind CSS ship preconfigured so you can focus on product work instead of tooling.',
-  },
-  {
-    icon: Code2,
-    title: 'Developer tooling',
-    description:
-      'ESLint, Prettier (with Tailwind sorting), and ready-to-run scripts keep your commits neat and repeatable.',
-  },
-  {
-    icon: PlugZap,
-    title: 'Localization ready',
-    description:
-      'Tolgee client scaffolding and CLI scripts are already wired up whenever you are ready to translate copy.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Safe by design',
-    description:
-      'Strict TypeScript settings, React StrictMode, and sensible lint rules catch issues long before production.',
-  },
-  {
-    icon: Layers3,
-    title: 'Composable structure',
-    description:
-      'A batteries-included src tree with app, components, hooks, and utils directories scales with your project.',
-  },
-  {
-    icon: Palette,
-    title: 'Utility-first styling',
-    description:
-      'TailwindCSS is ready out-of-the-box with PostCSS so you can ship polished UI without touching config.',
-  },
-]
-
-const commands = [
-  { label: 'Install dependencies', value: 'pnpm install' },
-  { label: 'Start dev server', value: 'pnpm dev' },
-  { label: 'Run lint checks', value: 'pnpm lint' },
-  { label: 'Create production build', value: 'pnpm build' },
-]
-
-const stackBadges = [
-  'React 19',
-  'Vite 7',
-  'TypeScript 5.9',
-  'Tailwind CSS 3.4',
-  'Tolgee Ready',
-  'ESLint + Prettier',
-]
-
-const resources = [
-  {
-    label: 'Vite Documentation',
-    href: 'https://vite.dev/guide/',
-    description: 'Understand how Vite handles dev, build, and previews.',
-  },
-  {
-    label: 'React Quick Start',
-    href: 'https://react.dev/learn',
-    description: 'Refresh modern React patterns, hooks, and compiler plans.',
-  },
-  {
-    label: 'TailwindCSS Docs',
-    href: 'https://tailwindcss.com/docs/installation',
-    description: 'Browse utility classes and component recipes.',
-  },
-]
-
-const CommandCard = (props: (typeof commands)[number]) => {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
-        {props.label}
-      </p>
-      <code className="mt-3 block font-mono text-sm text-white">{props.value}</code>
-    </div>
-  )
-}
-
-const FeatureCard = (props: (typeof features)[number]) => {
-  const Icon = props.icon
-  return (
-    <div className="group rounded-3xl border border-white/5 bg-white/5 p-6 transition hover:border-white/20 hover:bg-white/10">
-      <div className="mb-4 inline-flex items-center justify-center rounded-2xl border border-white/15 bg-slate-900/60 p-3 text-white">
-        <Icon className="h-5 w-5 transition group-hover:text-cyan-300" />
-      </div>
-      <p className="text-lg font-semibold">{props.title}</p>
-      <p className="mt-2 text-sm text-white/70">{props.description}</p>
-    </div>
-  )
-}
-
 const Page = () => {
   return (
     <div className="relative isolate overflow-hidden bg-slate-950 text-slate-100">
@@ -247,3 +146,104 @@ const Page = () => {
   )
 }
 export default Page
+
+const features: Array<{
+  icon: LucideIcon
+  title: string
+  description: string
+}> = [
+  {
+    icon: Sparkles,
+    title: 'Opinionated defaults',
+    description:
+      'React 19, TypeScript, Vite 7, and Tailwind CSS ship preconfigured so you can focus on product work instead of tooling.',
+  },
+  {
+    icon: Code2,
+    title: 'Developer tooling',
+    description:
+      'ESLint, Prettier (with Tailwind sorting), and ready-to-run scripts keep your commits neat and repeatable.',
+  },
+  {
+    icon: PlugZap,
+    title: 'Localization ready',
+    description:
+      'Tolgee client scaffolding and CLI scripts are already wired up whenever you are ready to translate copy.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Safe by design',
+    description:
+      'Strict TypeScript settings, React StrictMode, and sensible lint rules catch issues long before production.',
+  },
+  {
+    icon: Layers3,
+    title: 'Composable structure',
+    description:
+      'A batteries-included src tree with app, components, hooks, and utils directories scales with your project.',
+  },
+  {
+    icon: Palette,
+    title: 'Utility-first styling',
+    description:
+      'TailwindCSS is ready out-of-the-box with PostCSS so you can ship polished UI without touching config.',
+  },
+]
+
+const commands = [
+  { label: 'Install dependencies', value: 'pnpm install' },
+  { label: 'Start dev server', value: 'pnpm dev' },
+  { label: 'Run lint checks', value: 'pnpm lint' },
+  { label: 'Create production build', value: 'pnpm build' },
+]
+
+const stackBadges = [
+  'React 19',
+  'Vite 7',
+  'TypeScript 5.9',
+  'Tailwind CSS 3.4',
+  'Tolgee Ready',
+  'ESLint + Prettier',
+]
+
+const resources = [
+  {
+    label: 'Vite Documentation',
+    href: 'https://vite.dev/guide/',
+    description: 'Understand how Vite handles dev, build, and previews.',
+  },
+  {
+    label: 'React Quick Start',
+    href: 'https://react.dev/learn',
+    description: 'Refresh modern React patterns, hooks, and compiler plans.',
+  },
+  {
+    label: 'TailwindCSS Docs',
+    href: 'https://tailwindcss.com/docs/installation',
+    description: 'Browse utility classes and component recipes.',
+  },
+]
+
+const CommandCard = (props: (typeof commands)[number]) => {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+        {props.label}
+      </p>
+      <code className="mt-3 block font-mono text-sm text-white">{props.value}</code>
+    </div>
+  )
+}
+
+const FeatureCard = (props: (typeof features)[number]) => {
+  const Icon = props.icon
+  return (
+    <div className="group rounded-3xl border border-white/5 bg-white/5 p-6 transition hover:border-white/20 hover:bg-white/10">
+      <div className="mb-4 inline-flex items-center justify-center rounded-2xl border border-white/15 bg-slate-900/60 p-3 text-white">
+        <Icon className="h-5 w-5 transition group-hover:text-cyan-300" />
+      </div>
+      <p className="text-lg font-semibold">{props.title}</p>
+      <p className="mt-2 text-sm text-white/70">{props.description}</p>
+    </div>
+  )
+}
