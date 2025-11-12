@@ -27,3 +27,5 @@ dist-ssr
 !.env.example
 
 .react-router
+build
+temp
