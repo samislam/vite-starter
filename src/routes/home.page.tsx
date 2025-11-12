@@ -9,11 +9,11 @@ const Page = () => {
 
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-16 lg:px-10 lg:py-20">
         <header className="flex flex-col items-center gap-6 text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold tracking-[0.25em] text-white/70 uppercase">
             React Vite Starter
           </span>
 
-          <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl leading-tight font-semibold text-white sm:text-5xl lg:text-6xl">
             Hello from the{' '}
             <span className="bg-linear-to-r from-cyan-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
               React Vite Starter
@@ -61,7 +61,7 @@ const Page = () => {
               className="h-12 w-12 drop-shadow-[0_0_20px_rgba(56,189,248,0.35)]"
             />
             <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-white/50">Kickstart</p>
+              <p className="text-xs tracking-[0.4em] text-white/50 uppercase">Kickstart</p>
               <p className="text-lg font-semibold text-white">Modern React project scaffolding</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Page = () => {
 
         <section id="features" className="space-y-8">
           <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
+            <p className="text-xs font-semibold tracking-[0.4em] text-white/60 uppercase">
               Why this starter?
             </p>
             <h2 className="text-2xl font-semibold text-white sm:text-3xl">
@@ -96,7 +96,7 @@ const Page = () => {
 
         <section className="grid gap-6 rounded-3xl border border-white/5 bg-white/5 p-8 lg:grid-cols-2">
           <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
+            <p className="text-xs font-semibold tracking-[0.4em] text-white/60 uppercase">
               Next steps
             </p>
             <h3 className="text-2xl font-semibold text-white">From idea to prototype in minutes</h3>
@@ -227,7 +227,7 @@ const resources = [
 const CommandCard = (props: (typeof commands)[number]) => {
   return (
     <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+      <p className="text-xs font-semibold tracking-[0.18em] text-white/60 uppercase">
         {props.label}
       </p>
       <code className="mt-3 block font-mono text-sm text-white">{props.value}</code>
