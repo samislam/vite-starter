@@ -1,8 +1,12 @@
-import { Link } from 'react-router'
+import { data, Link } from 'react-router'
+
+export async function loader() {
+  return data({}, 404)
+}
 
 const NotFound = () => (
   <main className="flex min-h-screen flex-col items-center justify-center gap-6 bg-slate-950 px-6 text-center text-slate-100">
-    <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400">404</p>
+    <p className="text-xs font-semibold tracking-[0.4em] text-slate-400 uppercase">404</p>
     <h1 className="text-4xl font-semibold sm:text-5xl">Page not found</h1>
     <p className="max-w-lg text-sm text-slate-300 sm:text-base">
       The page you&apos;re looking for doesn&apos;t exist or has moved. Check the address or head
