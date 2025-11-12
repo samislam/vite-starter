@@ -13,9 +13,6 @@
     "format": "tsx ./scripts/format.ts",
     "locales": "tsx ./scripts/locales.ts"
   },
-  "tailwindcss": {
-    "config": "./tailwind.config.ts"
-  },
   "dependencies": {
     "@clscripts/cl-common": "^1.0.4",
     "@clscripts/dotenv-cli": "^8.0.1",
