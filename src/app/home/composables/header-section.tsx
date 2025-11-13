@@ -1,5 +1,6 @@
-import { useTranslate } from '@tolgee/react'
 import reactLogo from '@/assets/react.svg'
+import { useTranslate } from '@tolgee/react'
+import { LanguageSwitcher } from '@/components/common/language-switcher'
 
 export const HeaderSection = () => {
   const { t } = useTranslate()
@@ -38,6 +39,8 @@ export const HeaderSection = () => {
           {t('@t<home.header.secondaryCta>')}
         </a>
       </div>
+
+      <LanguageSwitcher className="self-center" />
 
       <div className="flex flex-wrap items-center justify-center gap-4">
         {stackBadgeKeys.map((badgeKey) => (
