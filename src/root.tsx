@@ -1,6 +1,8 @@
 import './globals.css'
 import { PropsWithChildren } from 'react'
 import appConfig from './config/app.config'
+import { TolgeeProvider } from '@tolgee/react'
+import { tolgee } from './lib/tolgee/tolgee.config'
 import { Meta, Links, Outlet, Scripts, ScrollRestoration } from 'react-router'
 
 export const Layout = (props: PropsWithChildren) => {
@@ -15,7 +17,7 @@ export const Layout = (props: PropsWithChildren) => {
         <Links />
       </head>
       <body>
-        {children}
+        <TolgeeProvider tolgee={tolgee}>{children}</TolgeeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
