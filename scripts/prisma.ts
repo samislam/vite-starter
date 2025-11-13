@@ -25,11 +25,6 @@ async function main() {
       pageSize: 10,
       choices: [
         {
-          name: 'Initialize',
-          value: 'init',
-          description: 'Generates the prisma/schema.prisma file',
-        },
-        {
           name: 'Generate prisma client',
           value: 'generate',
           description: 'Generates the Prisma Client for interacting with your database',
