@@ -60,4 +60,9 @@ const resourceLinks = [
     href: 'https://tailwindcss.com/docs/installation',
     descriptionKey: '@t<home.resources.links.tailwind.description>',
   },
+  {
+    labelKey: '@t<home.resources.links.prisma.label>',
+    href: 'https://www.prisma.io/docs',
+    descriptionKey: '@t<home.resources.links.prisma.description>',
+  },
 ]

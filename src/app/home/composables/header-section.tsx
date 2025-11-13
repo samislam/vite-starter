@@ -77,4 +77,5 @@ const stackBadgeKeys = [
   '@t<home.header.stack.tailwind34>',
   '@t<home.header.stack.tolgeeReady>',
   '@t<home.header.stack.eslintPrettier>',
+  '@t<home.header.stack.prisma>',
 ]
