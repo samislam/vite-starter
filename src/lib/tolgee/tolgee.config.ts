@@ -17,7 +17,11 @@ export const tolgee = Tolgee()
     apiUrl,
     defaultLanguage: appConfig.defaultLanguage,
     fallbackLanguage: appConfig.fallbackLanguage,
-    staticData: { en, tr, ar } satisfies Record<AppLanguages, TreeTranslationsData>,
+    staticData: {
+      en,
+      tr,
+      ar,
+    } satisfies Record<AppLanguages, TreeTranslationsData>,
   })
 
   .init()

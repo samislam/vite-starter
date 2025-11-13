@@ -14,9 +14,7 @@ export const FeaturesSection = () => {
         <h2 className="text-2xl font-semibold text-white sm:text-3xl">
           {t('@t<home.features.heading>')}
         </h2>
-        <p className="text-sm text-white/70">
-          {t('@t<home.features.description>')}
-        </p>
+        <p className="text-sm text-white/70">{t('@t<home.features.description>')}</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">

@@ -60,9 +60,7 @@ export const HeaderSection = () => {
           <p className="text-xs tracking-[0.4em] text-white/50 uppercase">
             {t('@t<home.header.subheadingLabel>')}
           </p>
-          <p className="text-lg font-semibold text-white">
-            {t('@t<home.header.subheadingTitle>')}
-          </p>
+          <p className="text-lg font-semibold text-white">{t('@t<home.header.subheadingTitle>')}</p>
         </div>
       </div>
     </header>
