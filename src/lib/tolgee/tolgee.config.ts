@@ -6,8 +6,8 @@ import { FormatIcu } from '@tolgee/format-icu'
 import { AppLanguages } from '@/types/app.types'
 import { Tolgee, DevTools, TreeTranslationsData } from '@tolgee/react'
 
-const apiUrl = import.meta.env.VITE_PUBLIC_TOLGEE_API_URL
-const apiKey = import.meta.env.VITE_PUBLIC_TOLGEE_API_KEY
+const apiUrl = import.meta.env.VITE_APP_TOLGEE_API_URL
+const apiKey = import.meta.env.VITE_APP_TOLGEE_API_KEY
 
 export const tolgee = Tolgee()
   .use(FormatIcu())
