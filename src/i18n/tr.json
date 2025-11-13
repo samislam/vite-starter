@@ -1,51 +1,91 @@
 {
-  "@t<home.footer.message>": "React Vite Starter şablonu ile sevgiyle oluşturuldu. Bu karşılama sayfasını ilk özelliğinle değiştir!",
-  "@t<home.header.badge>": "React Vite Starter",
-  "@t<home.header.title.prefix>": "Selamlar",
-  "@t<home.header.title.highlight>": "React Vite Starter",
-  "@t<home.header.description>": "Bu samimi açılış sayfası her şeyin hazır olduğunu kanıtlıyor. Hazır olduğunuzda onu değiştirin ya da komutlar, teknoloji yığını ve dokümantasyon için hızlı bir referans olarak saklayın.",
-  "@t<home.header.primaryCta>": "Depoyu görüntüle",
-  "@t<home.header.secondaryCta>": "Özellikleri keşfet",
-  "@t<home.header.stack.react19>": "React 19",
-  "@t<home.header.stack.vite7>": "Vite 7",
-  "@t<home.header.stack.ts59>": "TypeScript 5.9",
-  "@t<home.header.stack.tailwind34>": "Tailwind CSS 3.4",
-  "@t<home.header.stack.tolgeeReady>": "Tolgee Ready",
-  "@t<home.header.stack.eslintPrettier>": "ESLint + Prettier",
-  "@t<home.header.stack.prisma>": "Prisma ORM",
-  "@t<home.header.reactLogoAlt>": "React logosu",
-  "@t<home.header.subheadingLabel>": "Hızlı başlangıç",
-  "@t<home.header.subheadingTitle>": "Modern React proje başlangıcı",
-  "@t<home.features.eyebrow>": "Neden bu başlangıç?",
-  "@t<home.features.heading>": "Hızlı teslim için gereken her şey",
-  "@t<home.features.description>": "Kuralcı ama esnek. Herhangi bir aracı değiştirebilir veya yığını tesisatı yeniden kurmadan genişletebilirsiniz.",
-  "@t<home.features.cards.opinionatedDefaults.title>": "Kuralcı varsayılanlar",
-  "@t<home.features.cards.opinionatedDefaults.description>": "React 19, TypeScript, Vite 7 ve Tailwind CSS önceden yapılandırıldığı için araç ayarlamak yerine ürüne odaklanırsınız.",
-  "@t<home.features.cards.developerTooling.title>": "Geliştirici araçları",
-  "@t<home.features.cards.developerTooling.description>": "ESLint, Prettier (Tailwind sıralamasıyla) ve hazır komutlar commitlerinizi düzenli ve tekrarlanabilir kılar.",
-  "@t<home.features.cards.localizationReady.title>": "Yerelleştirmeye hazır",
-  "@t<home.features.cards.localizationReady.description>": "Tolgee istemcisi ve CLI komut dosyaları kopyaları çevirmeye hazır şekilde bağlanmış durumda.",
-  "@t<home.features.cards.safeByDesign.title>": "Tasarım gereği güvenli",
-  "@t<home.features.cards.safeByDesign.description>": "Sıkı TypeScript ayarları, React StrictMode ve mantıklı lint kuralları üretime varmadan sorunları yakalar.",
-  "@t<home.features.cards.composableStructure.title>": "Bileşenlenebilir yapı",
-  "@t<home.features.cards.composableStructure.description>": "app, components, hooks ve utils klasörlerini içeren zengin src ağacı proje büyüdükçe sizinle büyür.",
-  "@t<home.features.cards.utilityFirstStyling.title>": "Yardımcı sınıf odaklı stiller",
-  "@t<home.features.cards.utilityFirstStyling.description>": "TailwindCSS, PostCSS ile kutudan çıktığı anda kullanıma hazır; ayarlarla uğraşmadan cilalı UI'lar gönderebilirsiniz.",
-  "@t<home.resources.eyebrow>": "Sonraki adımlar",
-  "@t<home.resources.heading>": "Fikirden prototipe dakikalarda",
-  "@t<home.resources.description>": "Bu başlangıcı karşılama sayfası, onboarding dokümanı veya QA kontrol listesi olarak kullanın. Ekip ne kadar hızlı uygulamaya girerse bir sonraki sürümünüz o kadar iyi olur.",
-  "@t<home.resources.steps.copyRepo>": "Bu depoyu kopyalayın veya Git ile kendi projenizi başlatın.",
-  "@t<home.resources.steps.runCommands>": "Bağımlılıkları yüklemek ve geliştirme modunu başlatmak için yukarıdaki komutları çalıştırın.",
-  "@t<home.resources.steps.tweakPrefix>": "Şunu düzenleyin",
-  "@t<home.resources.steps.tweakSuffix>": "ya da kendi rotalarınızı ekleyin.",
-  "@t<home.resources.steps.keepScripts>": "Lint, format ve Tolgee yerelleştirmesi için komutları elinizin altında tutun.",
-  "@t<home.resources.links.heading>": "Kullanışlı bağlantılar",
-  "@t<home.resources.links.vite.label>": "Vite Dokümantasyonu",
-  "@t<home.resources.links.vite.description>": "Vite'ın geliştirme, build ve ön izlemeyi nasıl yönettiğini öğrenin.",
-  "@t<home.resources.links.react.label>": "React Hızlı Başlangıç",
-  "@t<home.resources.links.react.description>": "Modern React kalıplarını, hook'ları ve derleyici planlarını tazeleyin.",
-  "@t<home.resources.links.tailwind.label>": "TailwindCSS Dokümanları",
-  "@t<home.resources.links.tailwind.description>": "Yardımcı sınıfları ve bileşen tariflerini inceleyin.",
-  "@t<home.resources.links.prisma.label>": "Prisma Dokümantasyonu",
-  "@t<home.resources.links.prisma.description>": "Prisma'nın ORM süreçlerini, migrasyonlarını ve araçlarını keşfedin."
+  "@t<home": {
+    "features": {
+      "cards": {
+        "composableStructure": {
+          "description>": "app, components, hooks ve utils klasörlerini içeren zengin src ağacı proje büyüdükçe sizinle büyür.",
+          "title>": "Bileşenlenebilir yapı"
+        },
+        "developerTooling": {
+          "description>": "ESLint, Prettier (Tailwind sıralamasıyla) ve hazır komutlar commitlerinizi düzenli ve tekrarlanabilir kılar.",
+          "title>": "Geliştirici araçları"
+        },
+        "localizationReady": {
+          "description>": "Tolgee istemcisi ve CLI komut dosyaları kopyaları çevirmeye hazır şekilde bağlanmış durumda.",
+          "title>": "Yerelleştirmeye hazır"
+        },
+        "opinionatedDefaults": {
+          "description>": "React 19, TypeScript, Vite 7 ve Tailwind CSS önceden yapılandırıldığı için araç ayarlamak yerine ürüne odaklanırsınız.",
+          "title>": "Kuralcı varsayılanlar"
+        },
+        "safeByDesign": {
+          "description>": "Sıkı TypeScript ayarları, React StrictMode ve mantıklı lint kuralları üretime varmadan sorunları yakalar.",
+          "title>": "Tasarım gereği güvenli"
+        },
+        "utilityFirstStyling": {
+          "description>": "TailwindCSS, PostCSS ile kutudan çıktığı anda kullanıma hazır; ayarlarla uğraşmadan cilalı UI'lar gönderebilirsiniz.",
+          "title>": "Yardımcı sınıf odaklı stiller"
+        }
+      },
+      "description>": "Kuralcı ama esnek. Herhangi bir aracı değiştirebilir veya yığını tesisatı yeniden kurmadan genişletebilirsiniz.",
+      "eyebrow>": "Neden bu başlangıç?",
+      "heading>": "Hızlı teslim için gereken her şey"
+    },
+    "footer": {
+      "message>": "React Vite Starter şablonu ile sevgiyle oluşturuldu. Bu karşılama sayfasını ilk özelliğinle değiştir!"
+    },
+    "header": {
+      "badge>": "React Vite Starter",
+      "description>": "Bu samimi açılış sayfası her şeyin hazır olduğunu kanıtlıyor. Hazır olduğunuzda onu değiştirin ya da komutlar, teknoloji yığını ve dokümantasyon için hızlı bir referans olarak saklayın.",
+      "primaryCta>": "Depoyu görüntüle",
+      "reactLogoAlt>": "React logosu",
+      "secondaryCta>": "Özellikleri keşfet",
+      "stack": {
+        "eslintPrettier>": "ESLint + Prettier",
+        "prisma>": "Prisma ORM",
+        "react19>": "React 19",
+        "tailwind34>": "Tailwind CSS 3.4",
+        "tolgeeReady>": "Tolgee Ready",
+        "ts59>": "TypeScript 5.9",
+        "vite7>": "Vite 7"
+      },
+      "subheadingLabel>": "Hızlı başlangıç",
+      "subheadingTitle>": "Modern React proje başlangıcı",
+      "title": {
+        "highlight>": "React Vite Starter",
+        "prefix>": "Selamlar"
+      }
+    },
+    "resources": {
+      "description>": "Bu başlangıcı karşılama sayfası, onboarding dokümanı veya QA kontrol listesi olarak kullanın. Ekip ne kadar hızlı uygulamaya girerse bir sonraki sürümünüz o kadar iyi olur.",
+      "eyebrow>": "Sonraki adımlar",
+      "heading>": "Fikirden prototipe dakikalarda",
+      "links": {
+        "heading>": "Kullanışlı bağlantılar",
+        "prisma": {
+          "description>": "Prisma'nın ORM süreçlerini, migrasyonlarını ve araçlarını keşfedin.",
+          "label>": "Prisma Dokümantasyonu"
+        },
+        "react": {
+          "description>": "Modern React kalıplarını, hook'ları ve derleyici planlarını tazeleyin.",
+          "label>": "React Hızlı Başlangıç"
+        },
+        "tailwind": {
+          "description>": "Yardımcı sınıfları ve bileşen tariflerini inceleyin.",
+          "label>": "TailwindCSS Dokümanları"
+        },
+        "vite": {
+          "description>": "Vite'ın geliştirme, build ve ön izlemeyi nasıl yönettiğini öğrenin.",
+          "label>": "Vite Dokümantasyonu"
+        }
+      },
+      "steps": {
+        "copyRepo>": "Bu depoyu kopyalayın veya Git ile kendi projenizi başlatın.",
+        "keepScripts>": "Lint, format ve Tolgee yerelleştirmesi için komutları elinizin altında tutun.",
+        "runCommands>": "Bağımlılıkları yüklemek ve geliştirme modunu başlatmak için yukarıdaki komutları çalıştırın.",
+        "tweakPrefix>": "Şunu düzenleyin",
+        "tweakSuffix>": "ya da kendi rotalarınızı ekleyin."
+      }
+    }
+  }
 }
