@@ -6,8 +6,8 @@ import { concat } from 'concat-str'
  * @returns {string | undefined} The Tolgee Project ID if defined.
  */
 const TOLGEE_PROJECT_ID = process.env.TOLGEE_PROJECT_ID
-const TOLGEE_API_URL = process.env.VITE_PUBLIC_TOLGEE_API_URL
-const TOLGEE_API_KEY = process.env.VITE_PUBLIC_TOLGEE_API_KEY
+const TOLGEE_API_URL = process.env.TOLGEE_API_URL
+const TOLGEE_API_KEY = process.env.VITE_APP_TOLGEE_API_KEY
 
 const checkRequiredEnvVariables = () => {
   // Check that all required environment variables are set
