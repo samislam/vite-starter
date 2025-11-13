@@ -1,72 +1,79 @@
+import { useTranslate } from '@tolgee/react'
 import { FeatureCard } from './feature-card'
 import { Code2, Layers3, Palette, PlugZap, ShieldCheck, Sparkles, LucideIcon } from 'lucide-react'
 
 export const FeaturesSection = () => {
+  const { t } = useTranslate()
+
   return (
     <section id="features" className="space-y-8">
       <div className="space-y-2">
         <p className="text-xs font-semibold tracking-[0.4em] text-white/60 uppercase">
-          Why this starter?
+          {t('@t<home.features.eyebrow>')}
         </p>
         <h2 className="text-2xl font-semibold text-white sm:text-3xl">
-          Everything you need to ship fast
+          {t('@t<home.features.heading>')}
         </h2>
         <p className="text-sm text-white/70">
-          Opinionated but flexible. Swap any tool or extend the stack without redoing the plumbing
-          work.
+          {t('@t<home.features.description>')}
         </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {features.map((feature) => (
-          <FeatureCard key={feature.title} {...feature} />
+        {featureDefinitions.map((feature) => (
+          <FeatureCard
+            key={feature.titleKey}
+            icon={feature.icon}
+            title={t(feature.titleKey)}
+            description={t(feature.descriptionKey)}
+          />
         ))}
       </div>
     </section>
   )
 }
 
-export type Feature = {
+export type FeatureCardContent = {
   icon: LucideIcon
   title: string
   description: string
 }
 
-const features: Feature[] = [
+type FeatureDefinition = {
+  icon: LucideIcon
+  titleKey: string
+  descriptionKey: string
+}
+
+const featureDefinitions: FeatureDefinition[] = [
   {
     icon: Sparkles,
-    title: 'Opinionated defaults',
-    description:
-      'React 19, TypeScript, Vite 7, and Tailwind CSS ship preconfigured so you can focus on product work instead of tooling.',
+    titleKey: '@t<home.features.cards.opinionatedDefaults.title>',
+    descriptionKey: '@t<home.features.cards.opinionatedDefaults.description>',
   },
   {
     icon: Code2,
-    title: 'Developer tooling',
-    description:
-      'ESLint, Prettier (with Tailwind sorting), and ready-to-run scripts keep your commits neat and repeatable.',
+    titleKey: '@t<home.features.cards.developerTooling.title>',
+    descriptionKey: '@t<home.features.cards.developerTooling.description>',
   },
   {
     icon: PlugZap,
-    title: 'Localization ready',
-    description:
-      'Tolgee client scaffolding and CLI scripts are already wired up whenever you are ready to translate copy.',
+    titleKey: '@t<home.features.cards.localizationReady.title>',
+    descriptionKey: '@t<home.features.cards.localizationReady.description>',
   },
   {
     icon: ShieldCheck,
-    title: 'Safe by design',
-    description:
-      'Strict TypeScript settings, React StrictMode, and sensible lint rules catch issues long before production.',
+    titleKey: '@t<home.features.cards.safeByDesign.title>',
+    descriptionKey: '@t<home.features.cards.safeByDesign.description>',
   },
   {
     icon: Layers3,
-    title: 'Composable structure',
-    description:
-      'A batteries-included src tree with app, components, hooks, and utils directories scales with your project.',
+    titleKey: '@t<home.features.cards.composableStructure.title>',
+    descriptionKey: '@t<home.features.cards.composableStructure.description>',
   },
   {
     icon: Palette,
-    title: 'Utility-first styling',
-    description:
-      'TailwindCSS is ready out-of-the-box with PostCSS so you can ship polished UI without touching config.',
+    titleKey: '@t<home.features.cards.utilityFirstStyling.title>',
+    descriptionKey: '@t<home.features.cards.utilityFirstStyling.description>',
   },
 ]

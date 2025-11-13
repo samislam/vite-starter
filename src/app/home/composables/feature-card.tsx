@@ -1,6 +1,6 @@
-import { Feature } from '@/app/home/composables/features-section'
+import { FeatureCardContent } from '@/app/home/composables/features-section'
 
-export const FeatureCard = (props: Feature) => {
+export const FeatureCard = (props: FeatureCardContent) => {
   const Icon = props.icon
   return (
     <div className="group rounded-3xl border border-white/5 bg-white/5 p-6 transition hover:border-white/20 hover:bg-white/10">
