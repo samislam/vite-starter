@@ -6,6 +6,6 @@ export default createAppConfig({
   defaultLanguage: 'en',
   fallbackLanguage: 'en',
   languages: ['en', 'ar', 'tr'],
-  appName: 'ReactViteStarter',
-  appDescription: concat('React vite starter template'),
+  appName: 'React Starter',
+  appDescription: concat('React starter template'),
 })
